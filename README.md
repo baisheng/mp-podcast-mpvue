@@ -28,15 +28,18 @@ A Podcast miniprogram project, 一款播课类小程序
 ## 系统部分截图
 
 ### Landing 页
-![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1977.PNG?raw=true)
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1977.PNG?raw=true" title="Landing 页" width="375px">
 ### 精选页
-![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1978.PNG?raw=true)
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1978.PNG?raw=true" title="精选页" width="375px">
 ### 详情页及播放器
-![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1979.PNG?raw=true)
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1979.PNG?raw=true" title="详情页及播放器" width="375px">
 ### 音频播放列表
-![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1980.PNG?raw=true)
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1980.PNG?raw=true" title="播放列表" width="375px">
 ### 特色评论页，可以选择喜欢的色彩
-![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1982.PNG?raw=true)
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1982.PNG?raw=true" title="详论页" width="375px">
+
+## 小程序码(案例)
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/mp-case.jpg?raw=true" title="育儿柚道" width="175px">
 
 ## 安装部署
 ## Build Setup
