@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="icon-user-like-b" x1="0%" x2="102%" y1="0%" y2="101%">
+      <stop offset="0%" stop-color="#4A82F2"/>
+      <stop offset="100%" stop-color="#C86DD7"/>
+    </linearGradient>
+    <path id="icon-user-like-a" d="M22.9950284,39.1088333 C17.8888889,39.1088333 -3.55271368e-14,23.870738 -3.55271368e-14,12.5113337 C-3.46212714e-14,0.339432303 13.9306683,-4.63556349 22.0954153,5.29098603 C22.3331087,5.58077809 22.639345,6.11495668 22.9950284,6.09296024 C23.3070161,6.07366607 23.670442,5.5337489 23.87786,5.27955782 C32.0150079,-4.68127636 46.5896562,0.365424388 45.9709754,12.7993248 C45.9709754,23.870738 28.1011679,39.1088333 22.9950284,39.1088333 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(7 10)">
+    <use stroke="url(#icon-user-like-b)" stroke-width="1.917" xlink:href="#icon-user-like-a"/>
+  </g>
+</svg>

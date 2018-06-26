@@ -1,0 +1,14 @@
+//* ==========================================================================
+//   #LINEAR GRADIENT 
+// ========================================================================== */
+
+/// Mixin printing a linear-gradient
+/// as well as a plain color fallback
+/// @access public
+/// @param {Keyword | Angle} $direction - Linear gradient direction
+/// @param {Arglist} $color-stops - List of color-stops composing the gradient
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1); // fallback
+  background: linear-gradient($direction, $color-stops);
+}

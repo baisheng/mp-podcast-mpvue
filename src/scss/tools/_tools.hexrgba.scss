@@ -1,0 +1,70 @@
+$r: 0;
+$g: 100;
+$b: 250;
+$a: 0.8;
+$rgba: rgba($r,$g,$b,$a);
+
+@function toString($num, $radix: 16) {
+  $chars: '0123456789abcdef';
+  $result: '';
+  $sign: '';
+
+  @if $num < 0 {
+    $sign: '-';
+    $num: abs($num);
+  }
+
+  @if $num >= 0 and $num < $radix {
+    @return $sign + str-slice($chars, ($num + 1), ($num + 1));
+  }
+
+  $q: $num;
+  @while $q != 0 {
+    $r: $q % $radix;
+    $q: floor($q / $radix);
+    $result: str-slice($chars, ($r + 1), ($r + 1)) + $result;
+  }
+
+  @return $sign + $result;
+}
+
+@function hexrgba($rgba...) {
+  $a: alpha(rgba($rgba...));
+  $r: floor($a * red(rgba($rgba...)) + (1 - $a) * 255);
+  $g: floor($a * green(rgba($rgba...)) + (1 - $a) * 255);
+  $b: floor($a * blue(rgba($rgba...)) + (1 - $a) * 255);
+
+  @return unquote("##{str-slice("0#{toString($r)}",-2)}#{str-slice("0#{toString($g)}",-2)}#{str-slice("0#{toString($b)}",-2)}")
+}
+
+
+
+.rgba,.hex,.scss {
+  display:inline-block;
+  width:44%;
+  text-align:center;
+  background-color:cornflowerblue;
+  line-height:350px;
+}
+.rgba {
+  background-color:$rgba;
+  &:before {
+    content:"#{$rgba}";
+  }
+}
+.hex {
+  background-color:hexrgba($r,$g,$b,$a);
+  &:before {
+    content:"#{hexrgba($r,$g,$b,$a)}";
+  }
+}
+.scss {
+  background-color:mix(rgb($r,$g,$b),black,80);
+  &:before {
+    white-space:pre;
+    content:"mix(rgb(#{$r}, #{$g}, #{$b}),yellow,80) (#{mix(rgb($r,$g,$b),yellow,80)})";
+  }
+}
+body {
+  background-color:black;
+}

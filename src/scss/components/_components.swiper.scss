@@ -1,0 +1,12 @@
+.c-swiper {
+  width: 100%;
+  height: 240px !important;
+  .c-slide-image {
+    width: 100%;
+    height: 240px !important;
+  }
+  &swiper {
+    position: absolute;
+    z-index: -1;
+  }
+}

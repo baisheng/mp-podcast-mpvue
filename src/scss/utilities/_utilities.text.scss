@@ -1,0 +1,85 @@
+@import "../variable";
+@import "../settings/settings.global";
+/**
+ * Text Utilitites
+ */
+
+/**
+ * Text Colors
+ */
+.u-text-mute {
+  color: $text-mute-color !important;
+}
+
+.u-text-danger {
+  color: $color-danger !important;
+}
+
+.u-text-success {
+  color: #45B854 !important;
+}
+
+.u-text-dark {
+  color: #354052;
+}
+
+.u-text-white {
+  color: $white;
+}
+
+/**
+  * Text Sizes
+  */
+.u-text-tiny {
+  font-size: $text-tiny-font-size !important;
+}
+
+.u-text-xsmall {
+  font-size: $text-small-font-size !important;
+}
+
+.u-text-small {
+  font-size: $text-font-size !important;
+}
+
+.u-text-large {
+  font-size: $h6-font-size !important;
+}
+
+
+/**
+  * Font Weights
+  */
+.u-text-bold {
+  font-weight: $font-weight-bold !important;
+}
+
+/**
+  * Aligning Text
+  */
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+/**
+ * Transforming Text
+ */
+.u-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-text-capitalize {
+  text-transform: capitalize !important;
+}

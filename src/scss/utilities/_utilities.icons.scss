@@ -1,0 +1,64 @@
+//mixin
+@mixin icon-image($size){
+  height: $size;
+  width: $size;
+  vertical-align: middle;
+}
+
+@mixin icon-round($size){
+  @include icon-image($size);
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   #SIZES UTILITIES
+   ========================================================================== */
+//.u-float-left {
+
+.u-icon-small {
+  @include icon-image(16px);
+}
+.u-icon-medium {
+  @include icon-image(18px);
+}
+.u-icon {
+  @include icon-image(24px);
+}
+.u-icon-band {
+  @include icon-image(32px);
+}
+.u-icon-xlg {
+  @include icon-image(40px);
+}
+.u-icon-lg {
+  @include icon-image(28px);
+}
+.u-icon-xl {
+  @include icon-image(50px);
+}
+.u-icon-xxl{
+  @include icon-image(60px);
+}
+.u-icon-round {
+  border-radius: 100%;
+}
+.u-icon--down {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.u-icon--right {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transition: color .2s ease-in,-webkit-transform .15s cubic-bezier(.175,.885,.32,1.275);
+  transition: color .2s ease-in,-webkit-transform .15s cubic-bezier(.175,.885,.32,1.275);
+  transition: transform .15s cubic-bezier(.175,.885,.32,1.275),color .2s ease-in;
+  transition: transform .15s cubic-bezier(.175,.885,.32,1.275),color .2s ease-in,-webkit-transform .15s cubic-bezier(.175,.885,.32,1.275);
+}
+.u-icon--up {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: color .2s ease-in,-webkit-transform .15s cubic-bezier(.175,.885,.32,1.275);
+  transition: color .2s ease-in,-webkit-transform .15s cubic-bezier(.175,.885,.32,1.275);
+  transition: transform .15s cubic-bezier(.175,.885,.32,1.275),color .2s ease-in;
+  transition: transform .15s cubic-bezier(.175,.885,.32,1.275),color .2s ease-in,-webkit-transform .15s cubic-bezier(.175,.885,.32,1.275);
+}

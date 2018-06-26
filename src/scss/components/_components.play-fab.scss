@@ -1,0 +1,33 @@
+.c-play-fab__button {
+  float: left;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border: 0 solid #ffffff;
+  border-radius: 50px;
+  z-index: 100;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+}
+.c-play-fab__icon {
+  height: 56px;
+  width: 56px;
+  vertical-align: middle;
+  border-radius: 50px;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  -webkit-transform: rotate(360deg);
+  animation: rotation 5s linear infinite;
+  -moz-animation: rotation 5s linear infinite;
+  -webkit-animation: rotation 5s linear infinite;
+  -o-animation: rotation 5s linear infinite;
+}

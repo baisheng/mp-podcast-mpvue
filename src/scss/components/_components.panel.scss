@@ -1,0 +1,32 @@
+@import '../tools/tools.hairline';
+
+.c-panel {
+  position: relative;
+  background: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+
+  &::after {
+    @include hairline;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+}
+
+.c-panel-title {
+  font-size: 14px;
+  line-height: 1;
+  color: #999;
+  padding: 20px 15px 0 15px;
+}
+
+
+.c-panel--without-margin-top {
+  margin-top: 0;
+}
+
+.c-panel--without-border {
+  &::after {
+    border: 0 none;
+  }
+}

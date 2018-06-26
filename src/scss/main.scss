@@ -1,0 +1,433 @@
+@import "tools/tools.rpx";
+@import "tools/tools.clearfix";
+@import "tools/tools.linear-gradient";
+@import "tools/tools.onepx";
+@import "tools/tools.set-arrow";
+@import "tools/tools.text";
+//
+// SETTINGS
+//
+
+@import "components/components.panel";
+@import "components/components.cell";
+@import "components/components.btn";
+@import "components/components.card";
+@import "components/components.dialog";
+@import "components/components.toptips";
+@import "components/components.loadmore";
+@import "components/components.slide";
+@import "components/components.post";
+@import "components/components.comment";
+@import "components/components.avatar";
+@import "components/components.slider-panel";
+@import "components/components.play-fab";
+@import "components/components.swiper";
+@import "components/components.player";
+
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+
+//
+// Set up global Dashboard's variables.
+//
+// Don't change it here, instead, copy settings from this file into your custom
+// settings' file to override Dashboard's default settings.
+//
+
+//
+// Table of Content:
+//
+// 1. Color System
+// 2. Typography
+// 3. Backgrounds
+// 4. Borders
+// 5. Icon Fonts
+// 6. Z-index System
+// 7. Spacing
+// 8. Breakpints
+//
+
+//
+// 1. Color System
+// ========================================================================== */
+
+$grey-100: #f5f8fa !default;
+$grey-200: #f2f4f7 !default; // #F7F9FB
+$grey-300: #e6eaee !default; // eaeef1
+$grey-400: #dfe3e9 !default; // dfe1e5 E3E8EF
+$grey-500: #bbc5d5 !default;
+$grey-600: #b7c0cd !default; // c2cad4
+$grey-700: #9fa9ba !default;
+$grey-800: #7f8fa4 !default; // 7f8fa4
+
+$gunmetal-100: #475364 !default;
+$gunmetal-200: #354052 !default; // main
+$gunmetal-300: #2d3848 !default;
+$gunmetal-400: #273142 !default;
+$gunmetal-500: #1d2531 !default;
+
+$white: #fff !default;
+$black: #000 !default;
+
+$blue-100: #86CAFF !default;
+$blue-200: #53b2f9 !default;
+$blue-300: #2ea1f8 !default; // main
+$blue-400: #1990ea !default;
+$blue-500: #1a91eb !default; // 1991eb
+
+$green-100: #65dc52 !default;
+$green-200: #1bb934 !default;
+$green-300: #39b54a !default;
+$green-400: #34aa44 !default; //36af47
+$green-500: #249533 !default;
+
+$purple-100: #9d8fe3 !default;
+$purple-200: #a388e3 !default;
+$purple-300: #886ce6 !default;
+$purple-400: #8261e6 !default;
+$purple-500: #7d5be2 !default;
+
+$red-100: #f95359 !default;
+$red-200: #ed1c24 !default;
+$red-300: #d35847 !default;
+$red-400: #ed1c24 !default;
+$red-500: #db161e !default;
+
+$orange-100: #f8c95d !default;
+$orange-200: #f7bf47 !default;
+$orange-300: #fd9a18 !default; //F7981C
+$orange-400: #ff7800 !default;
+$orange-500: #f16911 !default;
+
+// states
+$color-mute: $grey-800 !default;
+$color-success: $green-200 !default;
+$color-info: $blue-300 !default;
+$color-warning: $orange-300 !default;
+$color-danger: $red-400 !default;
+$color-fancy: $purple-400 !default;
+
+// gradients
+$gradient-blue: $blue-300, $blue-400 !default;
+$gradient-green: $green-300, $green-400 !default;
+$gradient-purple: $purple-300, $purple-500 !default;
+$gradient-red: $red-100, $red-300 !default;
+$gradient-orange: $orange-300, $orange-500 !default;
+
+// brands
+$color-facebook: #2492E4 !default;
+$color-twitter: #0AF !default;
+$color-pinterest: #E30F27 !default;
+$color-behance: #187AC6 !default;
+$color-dribbble: #ea4c89 !default;
+$color-linkedin: #222 !default;
+
+//
+// 2. Typography
+// ========================================================================== */
+
+//$base-font-family: "Source Sans Pro", sans-serif !default;
+$base-font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft Yahei, \\5FAE软雅黑, STHeiti, \\534E文细黑, sans-serif !default;
+$base-font-size: 16px !default;
+$base-line-height: 24px !default;
+
+// Font Weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 500 !default;
+$font-weight-bold: 600 !default;
+
+// Paragraphs
+$text-tiny-font-size: 20rpx !default;
+$text-small-font-size: 24rpx !default;
+$text-font-size: 28rpx !default;
+$text-large-font-size: 16rpx !default;
+
+$text-color: $gunmetal-200;
+$text-strong-color: $gunmetal-200;
+$text-mark-color: $white;
+$text-mark-background-color: #ff0;
+$text-mute-color: $color-mute;
+
+// Headings
+$h1-font-size: 72rpx !default;
+$h2-font-size: 56rpx !default;
+$h3-font-size: 48rpx !default;
+$h4-font-size: 40rpx !default;
+$h5-font-size: 36rpx !default;
+$h6-font-size: 32rpx !default;
+
+$heading-margin-bottom: 16rpx !default;
+$heading-color: $gunmetal-200;
+$heading-font-weight: $font-weight-semibold;
+
+// Links
+$link-color: $blue-300 !default;
+$link-text-decoration: none !default;
+$link-hover-color: $blue-300 !default;
+$link-hover-text-decoration: underline !default;
+
+//
+// 3. Backgrounds
+// ========================================================================== */
+$body-background-color: #EFF3F6 !default;
+$base-background-color: $white !default;
+
+//
+// 4. Borders
+// ========================================================================== */
+$base-border-radius: 4px !default;
+$base-border-style: solid !default;
+$base-border-color: $grey-300 !default;
+$base-border-width: 1px !default;
+
+//
+// 5. Icon Fonts
+// ========================================================================== */
+$base-icon-font: "FontAwesome" !default;
+
+//
+// 6. Z-index System
+// ========================================================================== */
+$z-index-100: 100 !default; // over content
+$z-index-200: 200 !default; // over control
+$z-index-300: 300 !default; // over page
+$z-index-400: 400 !default; // over screen
+$z-index-500: 500 !default; // over everything
+
+//
+// 7. Spacing
+// ========================================================================== */
+
+$spacer-xsmall: 10rpx;
+$spacer-small: 15rpx;
+$spacer: 30rpx;
+$spacer-large: 50rpx;
+$spacer-xlarge: 100rpx;
+
+//
+// 8. Breakpoints
+// ========================================================================== */
+
+// Use these breakpoints with media-queries to create responsive website, these
+// numbers are based on Bootstrap's grid breakpoints
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-wide: 1200px;
+
+// Global Settings
+//@import "settings/settings.global";
+//@import "settings/settings.field";
+
+// UI-Kit Settings
+//@import "components/components.input";
+
+///* ========================================================================
+//   #INPUTS
+//   ======================================================================== */
+
+$input-padding: rpx(18) rpx(30) !default;
+$input-focus-color: tal-200;
+
+$input-border-color: $grey-400;
+$input-focus-border-color: $blue-300;
+$input-border-width: $base-border-width;
+$input-border-radius: $base-border-radius;
+
+$input-font-weight: $font-weight-normal;
+$input-font-size: $text-font-size;
+
+$input-placeholder-color: rgba($gunmetal-200, 0.5);
+$input-placeholder-font-weight: $font-weight-normal;
+
+$input-disabled-background-color: $grey-300;
+$input-disabled-border-color: $grey-400;
+$input-disabled-color: rgba($gunmetal-200, 0.5);
+
+$textarea-font-weight: $font-weight-normal;
+$textarea-font-size: $text-font-size;
+
+// Different states: success, error
+$input-success-border-color: $color-success;
+$input-success-color: $color-success;
+
+$input-warning-border-color: $color-warning;
+$input-warning-color: $color-warning;
+
+$input-danger-border-color: $color-danger;
+$input-danger-color: $color-danger;
+
+/* ==========================================================================
+   #INPUTS
+   ========================================================================== */
+
+.c-input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: $input-padding;
+  transition: all .3s;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  color: $input-focus-color;
+  font-size: $input-font-size;
+  font-weight: $input-font-weight;
+  resize: none;
+
+  &::placeholder {
+    transition: opacity 0.3s;
+    color: $input-placeholder-color;
+    font-weight: $input-placeholder-font-weight;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: $input-focus-border-color;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0.2;
+    }
+  }
+
+  &.is-disabled,
+  &:disabled {
+    border-color: $input-disabled-border-color;
+    background-color: $input-disabled-background-color;
+    color: $input-disabled-color;
+    cursor: not-allowed;
+  }
+}
+
+
+// sass-lint:disable no-qualifying-elements
+textarea.c-input {
+  min-height: 90px;
+  font-size: $textarea-font-size;
+  font-weight: $textarea-font-weight;
+}
+// sass-lint:enable no-qualifying-elements
+
+
+/* State variants
+   ========================================================================== */
+
+.c-input--success {
+  border-color: $input-success-border-color;
+
+  &:focus {
+    border-color: $input-success-border-color;
+  }
+}
+
+.c-input--warning {
+  border-color: $input-warning-border-color;
+
+  &:focus {
+    border-color: $input-warning-border-color;
+  }
+}
+
+.c-input--danger {
+  border-color: $input-danger-border-color;
+  color: $input-danger-color;
+
+  &:focus {
+    border-color: $input-danger-border-color;
+    color: $input-danger-color;
+  }
+}
+
+
+// UTILITIES
+//@import "utilities/utilities.typography";
+@import "utilities/utilities.floats";
+//@import "utilities/utilities.clearfix";
+@import "utilities/utilities.spacing";
+//@import "utilities/utilities.colors";
+@import "utilities/utilities.display";
+//@import "utilities/utilities.borders";
+@import "utilities/utilities.flex";
+//@import "utilities/utilities.responsive";
+@import "utilities/utilities.hairline";
+@import "utilities/utilities.text";
+@import "utilities/utilities.ellipsis";
+@import "utilities/utilities.opacity";
+@import "utilities/utilities.sizes";
+@import "utilities/utilities.icons";
+@import "utilities/utilities.color";
+
+/* ==========================================================================
+   #TYPOGRAPHY UTILITIES
+   ========================================================================== */
+
+// sass-lint:disable no-important
+
+/**
+ * Headings
+ *
+ * Redefine all of our basic heading styles against utility classes so as to
+ * allow for double stranded heading hierarchy, e.g. we semantically need an H2,
+ * but we want it to be sized like an H1:
+ *
+ *   <h2 class="u-h1"></h2>
+ *
+ */
+
+.u-h1 {
+  font-size: $h1-font-size;
+}
+
+.u-h2 {
+  font-size: $h2-font-size;
+}
+
+.u-h3 {
+  font-size: $h3-font-size;
+}
+
+.u-h4 {
+  font-size: $h4-font-size;
+}
+
+.u-h5 {
+  font-size: $h5-font-size;
+}
+
+.u-h6 {
+  font-size: $h6-font-size;
+}
+
+.u-arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8c8;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.fix-iphonex {
+  bottom: rpx(40) !important;
+}
+
+.fix-iphonex::after {
+  content: ' ';
+  position: fixed;
+  bottom: 0 !important;
+  height: rpx(40) !important;
+  /*width: 100%;*/
+  background: transparent;
+}

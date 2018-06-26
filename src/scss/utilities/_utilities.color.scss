@@ -1,0 +1,41 @@
+@import '../variable';
+
+.u-c-red {
+  color: $red !important;
+}
+
+.u-c-gray {
+  color: $gray !important;
+}
+
+.u-c-gray-dark {
+  color: $gray-dark !important;
+}
+
+.u-c-gray-darker {
+  color: $gray-darker !important;
+}
+
+.u-c-black {
+  color: $text-color !important;
+}
+
+.u-c-blue {
+  color: $blue !important;
+}
+
+.u-c-green {
+  color: $green !important;
+}
+
+.u-c-primary {
+  color: $color-primary;
+}
+
+.u-c-cyan {
+  color: #4EC0AA;
+}
+
+.u-c-warm {
+  color: #F05540;
+}

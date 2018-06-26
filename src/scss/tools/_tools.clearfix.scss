@@ -1,0 +1,16 @@
+//* ==========================================================================
+//   #CLEARFIX
+// ========================================================================== */
+
+//
+// Clearfix 
+// Clear floating elements
+//
+
+@mixin clearfix {
+	&::after {
+		display: table !important;
+		clear: both !important;
+		content: "" !important;
+	}
+}

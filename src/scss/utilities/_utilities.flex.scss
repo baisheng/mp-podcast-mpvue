@@ -1,0 +1,112 @@
+/* ==========================================================================
+   #FLEX UTILITIES
+   ========================================================================== */
+
+// sass-lint:disable no-important
+
+//
+// Table of content:
+//
+// 1. Flex display
+// 2. Justify content
+// 3. Align items
+// 4. Align self
+// 5. Flex wrap
+// 
+
+//
+// 1. Flex display
+//
+
+.u-flex {
+	display: flex !important;
+}
+
+.u-inline-flex {
+	display: inline-flex !important;
+}
+
+//
+// 2. Justify content
+//
+
+.u-justify-start {
+	justify-content: flex-start !important;
+}
+
+.u-justify-end {
+	justify-content: flex-end !important;
+}
+
+.u-justify-center {
+	justify-content: center !important;
+}
+
+.u-justify-between {
+	justify-content: space-between !important;
+}
+
+.u-justify-around {
+	justify-content: space-around !important;
+}
+
+//
+// 3. Align items
+//
+
+.u-align-items-start {
+	align-items: flex-start !important;
+}
+
+.u-align-items-end {
+	align-items: flex-end !important;
+}
+
+.u-align-items-center {
+	align-items: center !important;
+}
+
+.u-align-items-baseline {
+	align-items: baseline !important;
+}
+
+.u-align-items-stretch {
+	align-items: stretch !important;
+}
+
+//
+// 4. Align self
+//
+
+.u-align-self-start {
+	align-self: flex-start !important;
+}
+
+.u-align-self-end {
+	align-self: flex-end !important;
+}
+
+.u-align-self-center {
+	align-self: center !important;
+}
+
+.u-align-self-baseline {
+	align-self: baseline !important;
+}
+
+.u-align-self-stretch {
+	align-self: stretch !important;
+}
+
+
+//
+// 5. Flex wrap
+//
+
+.u-flex-wrap {
+	flex-wrap: wrap !important;
+}
+
+.u-flex-nowrap {
+	flex-wrap: nowrap !important;
+}

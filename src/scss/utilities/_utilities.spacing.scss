@@ -1,0 +1,119 @@
+/* ==========================================================================
+   #SPACING UTILITIES
+   ========================================================================== */
+
+// sass-lint:disable no-important
+// 7. Spacing
+// ========================================================================== */
+
+$spacer-xsmall: 10rpx;
+$spacer-small: 15rpx;
+$spacer: 30rpx;
+$spacer-large: 50rpx;
+$spacer-xlarge: 100rpx;
+/**
+ * Spacing utilities are used to provide spacing between components using
+ * margins or inside the components using paddings. Different sizes allow you
+ * to easily construct consistent layouts of components.
+ */
+
+$spacers: (
+	zero:   0,
+	auto: auto,
+	xsmall: $spacer-xsmall,
+	small:  $spacer-small,
+	medium: $spacer,
+	large:  $spacer-large,
+	xlarge: $spacer-xlarge
+);
+
+/**
+ * Margins
+ *
+ * m  -> all sides
+ * mt -> margin-top
+ * mr -> margin-right
+ * mb -> margin-bottom
+ * ml -> margin-left
+ * mv -> margin-top & margin-bottom (vertically)
+ * mh -> margin-right & margin-left (horizontaly)
+ *
+ */
+
+@each $property, $value in $spacers {
+	.u-m-#{$property} {
+		margin: $value !important;
+	}
+
+	.u-mt-#{$property} {
+		margin-top: $value !important;
+	}
+
+	.u-mr-#{$property} {
+		margin-right: $value !important;
+	}
+
+	.u-mb-#{$property} {
+		margin-bottom: $value !important;
+	}
+
+	.u-ml-#{$property} {
+		margin-left: $value !important;
+	}
+
+	.u-mv-#{$property} {
+		margin-top: $value !important;
+		margin-bottom: $value !important;
+	}
+
+	.u-mh-#{$property} {
+		margin-right: $value !important;
+		margin-left: $value !important;
+	}
+}
+
+
+/**
+ * Paddings
+ *
+ * p  -> all sides
+ * pt -> padding-top
+ * pr -> padding-right
+ * pb -> padding-bottom
+ * pl -> padding-left
+ * pv -> padding-top & padding-bottom (vertically)
+ * ph -> padding-right & padding-left (horizontaly)
+ *
+ */
+
+@each $property, $value in $spacers {
+	.u-p-#{$property} {
+		padding: $value !important;
+	}
+
+	.u-pt-#{$property} {
+		padding-top: $value !important;
+	}
+
+	.u-pr-#{$property} {
+		padding-right: $value !important;
+	}
+
+	.u-pb-#{$property} {
+		padding-bottom: $value !important;
+	}
+
+	.u-pl-#{$property} {
+		padding-left: $value !important;
+	}
+
+	.u-pv-#{$property} {
+		padding-top: $value !important;
+		padding-bottom: $value !important;
+	}
+
+	.u-ph-#{$property} {
+		padding-right: $value !important;
+		padding-left: $value !important;
+	}
+}

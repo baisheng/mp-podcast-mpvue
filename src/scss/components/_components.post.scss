@@ -1,0 +1,29 @@
+.c-post {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 325px;
+  &__featured-image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center center;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.10);
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: #212732;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+    width: 260px;
+  }
+  &__author {
+    color: #7b7b7b;
+    font-size: 14px;
+  }
+}

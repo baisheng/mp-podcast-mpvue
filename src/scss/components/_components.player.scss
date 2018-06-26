@@ -1,0 +1,116 @@
+.c-player {
+  opacity: 0;
+  visibility: hidden;
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.c-player__container {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+  z-index: 1001;
+  background: #FFFFFF;
+  transform: translateY(150%);
+  transition: all 0.5s ease;
+  overflow-y: scroll;
+  height: 140px;
+
+  &.is-show {
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.c-player__footer {
+  margin-top: 10px;
+}
+
+.c-player-status {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  z-index: 10;
+  top: 20px;
+  .time {
+    display: block;
+    font-size: 12px;
+    color: #333333;
+    z-index: 3;
+    text-align: center;
+    width: 50px;
+    transition: all 0.5s ease;
+  }
+  progress {
+    width: 256px;
+    margin: 0 auto;
+    color: #fafafa;
+    position: relative;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+  }
+  &__playstate {
+    position: absolute;
+    display: block;
+    height: 12px;
+    width: 12px;
+    overflow: hidden;
+    /*background: #fff;*/
+    /* Oval 3: */
+    background: #FFF;
+    /*border: 1px solid #FFFFFF;*/
+    /*box-shadow: 0 0 10px 0 #418AF2;*/
+    box-sizing: border-box;
+    /* Oval 3: */
+    box-shadow: 0 0 5px 0 rgba(74, 144, 226, 0.5);
+    border: 2px solid #4385F4;
+    border-radius: 50%;
+    top: 50%;
+    margin-left: 55px;
+    left: 0px;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 2;
+  }
+  &__dpstate {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #4385F4;
+    overflow: hidden;
+    left: 50px;
+    top: 50%;
+    margin-top: -1px;
+  }
+  slider {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    z-index: 10;
+  }
+}
+
+.c-player__control {
+  /*height: 80px;*/
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  /*justify-content: center;*/
+}
+
+.c-player__actions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*flex-direction: row;*/
+}

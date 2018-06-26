@@ -1,0 +1,12 @@
+.c-avatar {
+  width: 36px;
+  height: 36px;
+  background-position: center center;
+  border: 2px solid #EEE;
+  border-radius: 50px;
+  /*border-radius: 50%;*/
+  &.is-medium {
+    width: 24px;
+    height: 24px;
+  }
+}

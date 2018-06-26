@@ -1,0 +1,190 @@
+@import "../tools/tools.hairline";
+
+.c-btn {
+  position: relative;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  //border-radius: 8rpx;
+  font-size: 14px;
+  line-height: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.05), 0 2px 2px 0 rgba(0,0,0,0.10);
+}
+.c-btn::after {
+  @include hairline;
+  border-width: 1px;
+  //border-radius: 8rpx;
+}
+.c-btns {
+  margin: 15px;
+  width: 100%;
+}
+
+.c-btn--flat {
+  box-shadow: none;
+  border-radius: 0;
+}
+.c-btn--flat::after {
+  display:none !important;
+
+  //border: 0 solid $border-retina-color;
+}
+/* type */
+.c-btn--primary {
+  color: #fff;
+  background-color: #344A5E;
+
+  &::after {
+    border-color: #415A6B;
+  }
+}
+
+.c-btn--cyan {
+  color: #FFF;
+  background-color: #66C6B9;
+  &::after {
+    border-color: #4EC0AA;
+  }
+  //color
+}
+.c-btn--warm {
+  color: #FFF;
+  background-color: #F3705A;
+  &::after {
+    border-color: #F05540;
+  }
+}
+.c-btn--warn {
+  color: #fff;
+  background-color: #f85;
+
+  &::after {
+    border-color: #f85;
+  }
+}
+
+.c-btn--danger {
+  color: #fff;
+  background-color: #f44;
+
+  &::after {
+    border-color: #e33;
+  }
+}
+
+/* size */
+.c-btn--small {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  font-size: 26rpx;
+  margin-right: 5px;
+  margin-bottom: 0;
+  //font-weight: bold;
+}
+.c-btn--mini {
+  display: inline-block;
+  line-height: 21px;
+  height: 22px;
+  font-size: 10px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.c-btn--large {
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  line-height: 50px;
+  height: 50px;
+}
+
+/* plain */
+.c-btn--plain.c-btn {
+  background-color: transparent;
+}
+.c-btn--plain.c-btn--primary {
+  color: #344A5E;
+}
+.c-btn--plain.c-btn--cyan {
+  color: #4EC0AA;
+}
+.c-btn--plain.c-btn--warm {
+  color: #F05540;
+}
+.c-btn--plain.c-btn--warn {
+  color: #FF6600;
+}
+.c-btn--plain.c-btn--danger {
+  color: #FF4444;
+}
+
+/* 重写button组件的button-hover样式 */
+.button-hover {
+  opacity: 0.9;
+}
+
+/* loading */
+.c-btn--loading {
+  color: transparent;
+  opacity: 1;
+}
+.c-btn--loading::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 3px solid #e5e5e5;
+  border-color: #666 #e5e5e5 #e5e5e5 #e5e5e5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  animation: btn-spin 0.6s linear;
+  animation-iteration-count: infinite;
+}
+.c-btn--primary.c-btn--loading::before,
+.c-btn--warn.c-btn--loading::before,
+.c-btn--danger.c-btn--loading::before {
+  border-color: #fff rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+}
+
+@keyframes btn-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* disabled */
+.c-btn.c-btn--disabled {
+  /* 防止样式被 button[disabled] 的规则覆盖，所以使用了important */
+  color: #999 ! important;
+  background: #f8f8f8 ! important;
+  border-color: #e5e5e5 ! important;
+  cursor: not-allowed ! important;
+  opacity: 1 ! important;
+
+  &::after {
+    border-color: #e5e5e5 ! important;
+  }
+}
+
+/* :last-child */
+.c-btn--last-child,
+.c-btn:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
