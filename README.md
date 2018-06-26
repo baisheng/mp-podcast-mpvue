@@ -39,7 +39,7 @@ A Podcast miniprogram project, 一款播课类小程序
 <img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1982.PNG?raw=true" title="详论页" width="375px">
 
 ## 小程序码(案例)
-<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/mp-case.jpg?raw=true" title="育儿柚道" width="175px">
+<img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/mp-case.jpg?raw=true" title="育儿柚道" width="175px">
 
 ## 安装部署
 ## Build Setup
