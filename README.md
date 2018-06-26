@@ -28,15 +28,15 @@ A Podcast miniprogram project, 一款播课类小程序
 ## 系统部分截图
 
 ### Landing 页
-![img]()
+![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1977.PNG?raw=true)
 ### 精选页
-![img]()
+![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1978.PNG?raw=true)
 ### 详情页及播放器
-![img]()
+![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1979.PNG?raw=true)
 ### 音频播放列表
-![img]()
+![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1980.PNG?raw=true)
 ### 特色评论页，可以选择喜欢的色彩
-![img]()
+![img](https://github.com/baisheng/mp-podcast-mpvue/blob/master/assets/screenshot/IMG_1982.PNG?raw=true)
 
 ## 安装部署
 ## Build Setup
