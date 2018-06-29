@@ -25,6 +25,9 @@ A Podcast miniprogram project, 一款播课类小程序
 ### WePY 版本
 > [https://github.com/baisheng/mp-podcast-wepy](https://github.com/baisheng/mp-podcast-wepy)
 
+### Podcast 服务端
+> [https://github.com/baisheng/podcast-server](https://github.com/baisheng/podcast-server)
+
 ## 系统部分截图
 
 ### Landing 页
