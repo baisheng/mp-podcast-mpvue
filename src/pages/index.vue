@@ -344,17 +344,17 @@
       async refreshAppInfo () {
         await this.getAppInfo()
       },
-      async refresh () {
-        await this.getAppInfo()
-        await this.getCategories()
+      refresh () {
+        this.getAppInfo()
+        this.getCategories()
         // await this.getPopular()
         // await this.getNews()
-        await this.getNewsPage()
+        this.getNewsPage()
         // wx.stopPullDownRefresh()
       },
-      async getNewsPage () {
+      getNewsPage () {
         this.page = postApi.page('new')
-        await this.next()
+        this.next()
       }
     }
   }

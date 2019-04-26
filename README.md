@@ -21,6 +21,8 @@ A Podcast miniprogram project, 一款播课类小程序
 - mpvue 基于 mpvue 快速构建
 - vux 音频及内容数据管理
 - scss 样式组件
+### UNI-APP 版本
+> [https://github.com/caixie-ltd/cx-mp-podcast](https://github.com/caixie-ltd/cx-mp-podcast)
 
 ### WePY 版本
 > [https://github.com/baisheng/mp-podcast-wepy](https://github.com/baisheng/mp-podcast-wepy)
