@@ -30,8 +30,12 @@ A Podcast miniprogram project, 一款播课类小程序
 ### Podcast 服务端
 > [https://github.com/baisheng/podcast-server](https://github.com/baisheng/podcast-server)
 
-## 系统部分截图
+## 新版设计
+<img src="./doc/screenshot/Sample1.png" width="1381">
+<img src="./doc/screenshot/Sample2.png" width="1381">
+<img src="./doc/screenshot/Sample3.png" width="1381">
 
+## 当前版本
 ### Landing 页
 
 <img src="https://github.com/baisheng/mp-podcast-mpvue/blob/master/doc/screenshot/IMG_1977.PNG?raw=true" title="Landing 页" width="375px">
